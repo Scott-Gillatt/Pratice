@@ -1,17 +1,2 @@
-angular.module("GitHub", [])
-//this is totally cool
-// Hello World!!
-angular.module("GitHub")
-.controller("GitHubController", function($scope, GitHubService){
-    GitHubService.fetchUsers().success(function (users){
-        $scope.users = users
-    })
-})
-angular.module("GitHub")
-.factory("GitHubService", function ($http){
-    return {
-        fetchUsers: function (){
-            return $http.get("https://api.github.com/users?since=16550260")
-        }
-    }
-})
+angular.module("GitHub",[]),angular.module("GitHub").controller("GitHubController",["$scope","GitHubService",function(t,u){u.fetchUsers().success(function(u){t.users=u})}]),angular.module("GitHub").factory("GitHubService",["$http",function(t){return{fetchUsers:function(){return t.get("https://api.github.com/users?since=16550260")}}}]);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vZHVsZS5qcyIsImdpdGh1Yi9naXRodWIuY3RybC5qcyIsImdpdGh1Yi9naXRodWIuc3ZjLmpzIl0sIm5hbWVzIjpbImFuZ3VsYXIiLCJtb2R1bGUiLCJjb250cm9sbGVyIiwiJHNjb3BlIiwiR2l0SHViU2VydmljZSIsImZldGNoVXNlcnMiLCJzdWNjZXNzIiwidXNlcnMiLCJmYWN0b3J5IiwiJGh0dHAiLCJnZXQiXSwibWFwcGluZ3MiOiJBQUFBQSxRQUFBQyxPQUFBLGFDQ0FELFFBQUFDLE9BQUEsVUFDQUMsV0FBQSxvQkFBQSxTQUFBLGdCQUFBLFNBQUFDLEVBQUFDLEdBQ0FBLEVBQUFDLGFBQUFDLFFBQUEsU0FBQUMsR0FDQUosRUFBQUksTUFBQUEsT0NKQVAsUUFBQUMsT0FBQSxVQUNBTyxRQUFBLGlCQUFBLFFBQUEsU0FBQUMsR0FDQSxPQUNBSixXQUFBLFdBQ0EsTUFBQUksR0FBQUMsSUFBQSIsImZpbGUiOiJhcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJhbmd1bGFyLm1vZHVsZShcIkdpdEh1YlwiLCBbXSlcclxuLy90aGlzIGlzIHRvdGFsbHkgY29vbFxyXG4vLyBIZWxsbyBXb3JsZCEhXHJcbi8vVG9kYXkgaXMgV2VkbmVzZGF5IC0gVE9vZGF5IC0gTm93IENvb2xlciB0aGVuIGJlZm9yZSIsIi8vICRpbmplY3QgPSBbJyRzY29wZScsICdHaXRIdWJTZXJ2aWNlJ11cclxuYW5ndWxhci5tb2R1bGUoXCJHaXRIdWJcIilcclxuLmNvbnRyb2xsZXIoXCJHaXRIdWJDb250cm9sbGVyXCIsIGZ1bmN0aW9uKCRzY29wZSwgR2l0SHViU2VydmljZSl7XHJcbiAgICBHaXRIdWJTZXJ2aWNlLmZldGNoVXNlcnMoKS5zdWNjZXNzKGZ1bmN0aW9uICh1c2Vycyl7XHJcbiAgICAgICAgJHNjb3BlLnVzZXJzID0gdXNlcnNcclxuICAgIH0pXHJcbn0pIiwiYW5ndWxhci5tb2R1bGUoXCJHaXRIdWJcIilcclxuLmZhY3RvcnkoXCJHaXRIdWJTZXJ2aWNlXCIsIGZ1bmN0aW9uICgkaHR0cCl7XHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIGZldGNoVXNlcnM6IGZ1bmN0aW9uICgpe1xyXG4gICAgICAgICAgICByZXR1cm4gJGh0dHAuZ2V0KFwiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycz9zaW5jZT0xNjU1MDI2MFwiKVxyXG4gICAgICAgIH1cclxuICAgIH1cclxufSkiXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
